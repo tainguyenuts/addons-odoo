@@ -9,7 +9,7 @@
     'website': 'http://yourwebsite.com',
     'depends': ['base'],  # Specify dependencies here
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/my_model_views.xml',
     ],
     'installable': True,
