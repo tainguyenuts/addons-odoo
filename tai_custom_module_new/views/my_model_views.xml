@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+    <record id="view_partner_form_custom" model="ir.ui.view">
+      <field name="name">res.partner.form.custom</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="arch" type="xml">
+	<xpath expr="//group//field[@name='comment']" position="after">
+	  <field name="buyer_role" placeholder="Enter Buyer Role"/>
+	  <field name="influence_level" placeholder="Enter Influence Level"/>
+          <field name="job_status" placeholder="Select Job Status"/>
+          <field name="attitude" placeholder="Enter Attitude"/>
+          <field name="flag_alert"/>
+          <field name="total_score" placeholder="Enter Total Score"/>
+          <field name="winning" placeholder="Select Winning"/>
+          <field name="remarks_notes" placeholder="Enter Remarks or Notes"/>
+	  <field name="customer_care_assignment" placeholder="Assign Customer Care"/>
+	</xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
